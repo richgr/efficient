@@ -10,7 +10,9 @@ describe User do
   end
 
   it "should create a new instance given valid attributes" do
-    Person.create(@valid_attributes)
+#    lambda do
+      User.create!(@valid_attributes)    
+#    end.should change(User).by(1)
   end
 
 end

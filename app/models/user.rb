@@ -4,8 +4,6 @@ class User < ActiveRecord::Base
   
   validates :first_name, :presence => true,
                         :length => 2..50
-  validates :middle_name, :presence => true,
-                        :length => 2..50
   validates :last_name, :presence => true,
                         :length => 2..50
 
